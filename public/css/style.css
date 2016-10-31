@@ -1,0 +1,133 @@
+body {
+	background-color: #f8f8f8;
+}
+.navbar {
+	overflow: visible;
+}
+.page-wrapper {
+	/*width: 100%;*/
+	min-height: 100%;
+	padding-top: 53px;
+	margin-left: 250px;
+	background-color: #fff;
+}
+
+#header {
+	padding: 0 50px;
+}
+#header .navbar {
+	margin-bottom: 0;
+}
+#header .dropdown-menu {
+	left: initial;
+	right: 0;
+}
+
+#header .nav>li>a {
+    padding: 15px;
+    min-height: 50px;
+}
+
+#content {
+	padding: 20px 30px; 	
+}
+#sideMenu {
+	position: absolute;
+	margin: 0;
+	width: 250px;
+	min-height: 100%;
+	padding-top: 50px;
+}
+#sideMenu .list-group-item {
+	background-color: inherit;
+	border-right: none;
+}
+
+#sideMenu .list-group-item.active, #sideMenu .list-group-item:hover,
+#sideMenu .collapse li.active, #sideMenu .collapse li:hover {
+	background-color: #eee;
+}
+#sideMenu .collapse.list-group {
+	margin: 0;
+}
+#sideMenu ul.collapse {
+	padding: 0;
+}
+#sideMenu ul.collapse li {
+	position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+	border: none;
+}
+
+#sideMenu ul.collapse li a {
+	padding-left: 40px;
+}
+
+#sideMenu ul li a .fa{
+	line-height: 28px;
+}
+
+#unSelectedAttr, #selectedAttr {
+	height: 360px;
+	overflow: overlay;
+}
+
+#productPreview .productPreviewSub  {
+	float: left;
+	position: relative;
+	margin-bottom: 15px;
+	padding: 5px 5px 15px 5px;
+    border-bottom: 1px dotted rgba(131, 126, 126, 0.36);
+}
+
+#productPreview .productPreviewSub div {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+#productPreview .productPreviewSub img {
+	border-radius: 4px;
+	width: 100%;
+}
+
+#productPreview .productPreviewSub i {
+	position: absolute;
+    right: 0px;
+    top: 0px;
+	color: #c9302c;
+}
+
+#productPreview .productPreviewSub input[name$='ort[]'] {
+	position: absolute;
+    width: 60px;
+    top: 0;
+    left: 0;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+#productPreview .productPreviewSub input[name$='abel[]'] {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 0.70);
+	color: #000;
+}
+
+@media (min-width: 768px) {
+	#productPreview .productPreviewSub {
+		width: 50%;
+		height: 140px;
+	}
+}
+
+@media (min-width: 992px) {
+	#productPreview .productPreviewSub {
+    width: 33.33333333%;
+	height: 200px;
+	}
+}
